@@ -11,4 +11,6 @@ public interface UserService {
     void delById(Integer id);
 
     void save(User user);
+    //根据id查询数据
+    User findById(Integer id);
 }

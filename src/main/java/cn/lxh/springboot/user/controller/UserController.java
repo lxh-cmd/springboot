@@ -35,4 +35,10 @@ public class UserController {
         userService.save(user);
         return "success";
     }
+    //根据用户id查询数据
+    @RequestMapping("/findById")
+    @ResponseBody
+    public User findById(Integer id){
+        return userService.findById(id);
+    }
 }

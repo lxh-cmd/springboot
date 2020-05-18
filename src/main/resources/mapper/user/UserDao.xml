@@ -27,5 +27,9 @@
         #{status}
          );
     </insert>
+    <!--根据id查询数据 -->
+    <select id="findById" resultType="cn.lxh.springboot.user.entity.User" parameterType="java.lang.Integer">
+        select * from user where id = #{id}
+    </select>
 </mapper>
       
